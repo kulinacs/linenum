@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// OSRelease contains the contents of /etc/os-release
 type OSRelease struct {
 	Name             string
 	Version          string
@@ -25,6 +26,7 @@ type OSRelease struct {
 	Logo             string
 }
 
+// ParseOSRelease takes a []string of lines in /etc/os-release and returns a filled OSRelease
 func ParseOSRelease(releaseLines []string) *OSRelease {
 	release := &OSRelease{}
 	for _, line := range releaseLines {

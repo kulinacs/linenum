@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// User is a user on the system found in /etc/passwd
 type User struct {
 	Username      string
 	Password      string

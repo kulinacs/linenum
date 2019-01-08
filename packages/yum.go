@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// Package is a program installed by a package manager like yum or apt
 type Package struct {
 	Name    string
 	Version string
