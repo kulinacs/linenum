@@ -11,6 +11,7 @@ type User struct {
 	Password      string
 	UserID        int
 	GroupID       int
+	Groups        []int
 	Comment       string
 	HomeDirectory string
 	Shell         string
